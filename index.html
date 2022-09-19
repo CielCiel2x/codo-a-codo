@@ -1,61 +1,138 @@
 <!DOCTYPE html>
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <link href="./styles/styles.css" rel="stylesheet">
-      </head>
-      <body>
+<!doctype html>
+<html lang="en">
 
-        <header>
-            <nav class="navbar navbar-expand-lg bg-secondary">
-                <div class="container-fluid justify-content-around">
-                        <a class="navbar-brand text-white" href="#">
-                            <img src="./images/codoacodo.png" alt="Logo" class="align-text-center w-25">
-                            Conf Bs As
-                          </a>
-                                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                                          </button>
-                                          <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                          <a class="nav-link active text-white" aria-current="page" href="#">La Conferencia</a>
-                          <a class="nav-link nav-link-secondary" href="#">Los oradores</a>
-                          <a class="nav-link nav-link-secondary" href="#">El lugar y la fecha</a>
-                          <a class="nav-link nav-link-secondary" href="#">Conviertete en orador</a>
-                          <a class="nav-link nav-link__purchase" href="#">Comprar tickets</a>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="./styles/styles.css" rel="stylesheet">
+</head>
 
+<body>
 
-        <main>
-            <section class="hero-section__container">
-                <div class="hero__background"></div>
-                <div class="hero-section__content">
-                    <h1>Conf Bs As</h1>
-                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están crteando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                    <div>
-                        <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                        <button type="button" class="btn btn-success">Comprar tickets</button>
-                    </div>
-                </div>
-            </section>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid justify-content-around">
+        <a class="navbar-brand text-white" href="#">
+          <img src="./images/codoacodo.png" alt="Logo" class="align-text-center navbar__logo">
+          Conf Bs As
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-white" aria-current="page" href="#">La Conferencia</a>
+            <a class="nav-link nav-link-secondary" href="#">Los oradores</a>
+            <a class="nav-link nav-link-secondary" href="#">El lugar y la fecha</a>
+            <a class="nav-link nav-link-secondary" href="#">Conviertete en orador</a>
+            <a class="nav-link nav-link__purchase" href="#">Comprar tickets</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
 
 
+  <main>
+    <section class="hero-section__container">
+      <div class="hero__background"></div>
+      <div class="hero-section__content">
+        <h1>Conf Bs As</h1>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y
+          experiencia de los expertos que están crteando el futuro de Internet. Ven a conocer a miembros del evento, a
+          otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+        <div>
+          <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+          <button type="button" class="btn btn-success">Comprar tickets</button>
+        </div>
+      </div>
+    </section>
 
-        </main>
+    <section class="container-fluid d-flex flex-column justify-content-center mt-5">
+      <h2 class="section__title">CONOCE A LOS<br><span class="section-title__span">ORADORES</span></h2>
+      <div class="container-fluid d-flex gap-3 justify-content-center mt-3">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/steve.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge text-bg-warning">Javascript</span> <span class="badge text-bg-info">React</span>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, pariatur? In error
+              quas eius cum debitis dicta voluptate. Sequi asperiores obcaecati deserunt neque quasi labore odio? Ipsam
+              iusto illum sed?</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./images/bill.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge text-bg-warning">Javascript</span> <span class="badge text-bg-info">React</span>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, itaque illum animi
+              labore placeat voluptatum sapiente voluptatem ullam ea possimus eum nisi, adipisci atque in? Ipsa nemo
+              praesentium animi sit!</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./images/ada.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge text-bg-secondary">Negocios</span> <span class="badge text-bg-danger">Startups</span>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime eius ipsum officiis
+              nobis assumenda minima doloribus, iste cupiditate beatae natus ex quia rem id asperiores veniam aperiam
+              qui, distinctio est.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-50">
+      <div class="container-fluid d-flex flex-row w-100 p-0 mt-5 honolulu__container">
+        <img src="./images/honolulu.jpg" alt="Imagen de las playas de Honolulu" class="w-50 honolulu__image">
+        <div class="bg-dark text-white p-5">
+          <h2>Bs As - Octubre</h2>
+          <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+            Honolulu es la más sureá de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se
+            refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han
+            formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de
+            superficie).</p>
+          <button type="button" class="btn btn-outline-light">Conocé más</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 d-flex flex-column container-fluid justify-content-center align-items-center">
+      <h2 class="section__title">CONVIERTETE EN UN<br><span class="section-title__span">ORADOR</span></h2>
+      <p class="text-center">Anótate como orador para dar una <span class="subtitle__span">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+
+      <div class="d-flex gap-4 px-5 flex-column w-50">
+        <div class="d-flex gap-4"><input class="form-control" type="text" placeholder="Nombre" aria-label="Input nombre"> <input class="form-control" type="text" placeholder="Apellido" aria-label="Input nombre"></div>
+        <div>
+          <textarea class="form-control" id="formInputArea" rows="7" placeholder="Sobre qué quieres hablar?" class=""></textarea>
+          <p>Recuerda inluir un titulo para tu charla</p>
+        </div>
+        <button type="button" class="btn btn-success w-100">Success</button>
+      </div>
+
+    </section>
+
+  </main>
 
 
-        <footer>
+  <footer>
+    <div class="footer__container">
+      <a href="#" class="footer-nav-link">Preguntas Frecuentes</a>
+      <a href="#" class="footer-nav-link">Contactanos</a>
+      <a href="#" class="footer-nav-link">Prensa</a>
+      <a href="#" class="footer-nav-link">Conferencias</a>
+      <a href="#" class="footer-nav-link">Terminos y condiciones</a>
+      <a href="#" class="footer-nav-link">Privacidad</a>
+      <a href="#" class="footer-nav-link">Estudiantes</a>
+    </div>
 
-        </footer>
+  </footer>
 
 
 
@@ -63,6 +140,9 @@
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-      </body>
-    </html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
